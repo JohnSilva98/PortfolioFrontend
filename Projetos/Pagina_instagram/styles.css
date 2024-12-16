@@ -1,0 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+body {
+  background-color: #fafafa;
+}
+
+#main-container {
+  display: flex;
+  margin-top: 30px;
+}
+
+#banner-container,
+#form-container {
+  flex: 1 1 0;
+  width: 50%;
+}
+
+#banner-container {
+  text-align: right;
+}
+#banner-container img {
+  width: 100%;
+  margin-right: 15px;
+  margin-top: 25px;
+  max-width: 360px;
+}
+
+#form-container {
+  text-align: center;
+}
+
+#form-box {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  width: 350px;
+  margin-top: 30px;
+}
+
+#logo-insta {
+  width: 175px;
+  height: 51px;
+  margin: 30px auto 12px;
+}
+
+#login-form {
+  margin-top: 20px;
+}
+
+#login-form input {
+  display: block;
+  font-size: 12px;
+  padding: 12px 9px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  width: 268px;
+  margin: 5px auto;
+}
+
+#login-form input[type="submit"] {
+  background-color: #b2dffc;
+  color: #fff;
+  margin-top: 15px;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 13px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.separator {
+  position: relative;
+}
+
+.line {
+  border-top: 1px solid #dbdbdb;
+  width: 268px;
+  margin: 25px auto 35px;
+}
+
+.separator span {
+  position: absolute;
+  text-transform: uppercase;
+  color: #bbb;
+  background-color: #fff;
+  top: -6px;
+  width: 50px;
+  margin-left: -25px;
+  font-size: 14px;
+}
+
+#facebook-login {
+  margin-bottom: 25px;
+}
+
+#facebook-login a {
+  text-decoration: none;
+  color: #385185;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#facebook-login img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8%;
+}
+#facebook-login span {
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 1px;
+}
+
+#forgot-pass {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+#forgot-pass a {
+  text-decoration: none;
+  color: #373799;
+}
+
+#register-container {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  width: 350px;
+  margin-top: 10px;
+  padding: 25px;
+}
+#register-container a {
+  text-decoration: none;
+}
+#register-container p {
+  font-size: 14px;
+  color: #262626;
+}
+
+#get-app-container {
+  text-align: center;
+  width: 350px;
+}
+
+#get-app-container p {
+  margin: 20px 0;
+  font-size: 13px;
+}
+
+#get-app-container a {
+  text-decoration: none;
+}
+
+#get-app-container img {
+  width: 136px;
+  height: 40px;
+}
+footer {
+  text-align: left;
+  width: 100px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer #footer-links {
+  display: flex;
+  list-style: none;
+}
+
+#footer-links li {
+  margin-right: 10px;
+}
+
+#footer-links a,
+#copyright {
+  text-decoration: none;
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+#copyright {
+  margin-top: 10px;
+}
+@media screen and (max-width: 450px) {
+  body {
+    background-color: #fff;
+  }
+  #banner-container {
+    display: none;
+  }
+
+  #main-container,
+  #form-box {
+    margin-top: 0;
+  }
+
+  #form-container,
+  #form-box,
+  #register-container,
+  #get-app-container {
+    width: 100%;
+    border: none;
+  }
+  footer {
+    width: 90%;
+  }
+  #footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #footer-links {
+    margin-bottom: 10px;
+  }
+}
+/*pagina de recuperar senha*/
+
+#main-reset-container {
+  display: flex;
+}
+header {
+  align-items: center;
+  padding: 0 20px;
+  height: 40px;
+  width: 100%;
+}
+header img {
+  margin-top: 10px;
+  height: 29px;
+  width: 103px;
+}
+#line-reset {
+  border-top: 1px solid #dbdbdb;
+  width: 100%;
+  margin-top: 3px;
+}
+#reset-container {
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 10px auto 0 auto;
+  width: 388px;
+  height: 500px;
+  border: 1px solid gray;
+}
+.lock {
+  width: 96px;
+  height: 96px;
+  margin: 20px auto;
+}
+#reset-container .problem {
+  font-weight: bold;
+}
+#reset-container .text {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#forgot-passwd {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+#recover {
+  text-align: center;
+  margin: 0 auto;
+  padding: 4px 9px;
+  width: 290px;
+  height: 38px;
+}
+
+#forgot-passwd input[type="submit"] {
+  background-color: #b2dffc;
+  color: #fff;
+  margin-top: 15px;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 13px;
+  padding: 0;
+  font-weight: bold;
+}
+
+#redefinir {
+  font-size: 12px;
+  margin-top: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#forgot-passwd .return {
+  display: flex;
+  border: 1px solid gray;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #fafafa;
+  margin-top: 2.3rem;
+}
+#forgot-passwd .return a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 14px;
+}
+.separador {
+  position: relative;
+}
+
+.linha {
+  border-top: 1px solid #dbdbdb;
+  width: 268px;
+  margin: 25px auto 35px;
+}
+
+.separador span {
+  position: absolute;
+  text-transform: uppercase;
+  color: #bbb;
+  background-color: #fff;
+  width: 50px;
+  margin-left: -25px;
+  font-size: 14px;
+}
+
+#new-account {
+  width: 300px;
+  height: 18px;
+  margin: 0 auto;
+}
+#new-account a {
+  color: #262626;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/*pagina de cadastro*/
+#main-singup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1px;
+  border: 1px solid gray;
+  width: 350px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.cadastre-se {
+  width: 268px;
+  height: 40px;
+  text-align: center;
+  color: #737373;
+}
+
+.insta {
+  width: 174px;
+  height: 50px;
+}
+
+.fblogin {
+  width: auto;
+}
+.fblogin button {
+  width: 268px;
+  height: 33px;
+  border-radius: 10px;
+  background-color: #0095f6;
+  padding: 7px 16px;
+  opacity: 0.7;
+}
+.fblogin img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8%;
+}
+
+.fblogin a {
+  color: #fafafa;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#signup-separator {
+  position: relative;
+}
+
+#signup-line {
+  border-top: 1px solid #dbdbdb;
+  width: 268px;
+  margin: 25px auto 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#signup-separator span {
+  position: absolute;
+  text-transform: uppercase;
+  color: #bbb;
+  background-color: #fff;
+  text-align: center;
+  width: 50px;
+  margin-top: -8px;
+  font-size: 14px;
+}
+
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 9px 0 7px 8px;
+  gap: 3px;
+}
+
+.signup-form input {
+  color: #fafafa;
+  width: 259px;
+  height: 36px;
+}
+#space {
+  margin-bottom: 30px;
+}
+.spans {
+  width: 246px;
+  height: 112px;
+  margin: 0 auto;
+}
+.spans span {
+  display: flex;
+  flex-direction: column;
+  width: 246px;
+  height: 48px;
+  color: #737373;
+  font-size: 12px;
+  text-align: center;
+}
+.spans a {
+  text-decoration: none;
+  color: #00376b;
+}
+
+.cadastre-se {
+  display: flex;
+  width: 348px;
+  height: 48px;
+  margin-top: 10px;
+}
+
+.cadastre-se button {
+  width: 268px;
+  height: 32px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #0095f6;
+  opacity: 0.7;
+}
+
+.cadastre-se a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+#connect {
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+  width: 350px;
+  height: 69px;
+  margin: 0 auto;
+}
+
+#connect p {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+#connect a {
+  text-decoration: none;
+  color: #0095f6;
+}
+
+.spacedivs {
+  margin: 0 0 10px;
+  padding: 10px o;
+}
+
+#apps {
+  width: 340px;
+  height: 94px;
+  margin: 0 auto;
+  text-align: center;
+}
+#apps span {
+  font-size: 14px;
+  width: 310px;
+  height: 18px;
+}
+
+#imgs img {
+  margin-top: 15px;
+  width: 134px;
+  height: 40px;
+}
