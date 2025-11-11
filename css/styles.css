@@ -20,7 +20,7 @@ html {
 h1 {
   box-shadow: inset 0 0 0 0 #000000;
   color: white;
-  opacity: 0.7;
+  opacity: 1;
   transition: color 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -105,7 +105,13 @@ h3 {
 #contato {
   padding: 10px;
 }
-
+.projectDescription {
+  font-size: 20px;
+  font-weight: 500;
+}
+.project img {
+  border-radius: 20px;
+}
 /* aside */
 #aside-content {
   flex: 1 1 30%;
@@ -202,61 +208,57 @@ ul li {
     width: 90%;
   }
 }
-#Skills #c {
-  background: #303030;
-  background: linear-gradient(90deg, #7f7f7f 45%, #303030 45%);
-  animation: animate 1s linear;
+#Skills p {
   text-align: start;
+  margin-left: 10px;
+}
+#Skills #rn {
+  background: #303030;
+  background: linear-gradient(90deg, #bababa 75%, #303030 45%);
+  animation: animate 1s linear;
+
   line-height: 20px;
   margin-top: -10px;
 }
-#Skills #cSharp {
+#Skills #reactNative {
   animation: animateText 1.1s linear;
-  color: #b74bb7;
-  position: relative;
-  right: 7rem;
+  color: #15c7e2;
 }
 
-#Skills #sqlServ {
+#Skills #rjs {
   background: #303030;
-  background: linear-gradient(90deg, #7f7f7f 40%, #303030 40%);
+  background: linear-gradient(90deg, #bababa 65%, #303030 40%);
   animation: animate 1.1s linear;
-  text-align: start;
+
   line-height: 20px;
   margin-top: -10px;
 }
-#Skills #sql {
+#Skills #reactjs {
   animation: animateText 1.3s linear;
   color: #e52e2e;
-  position: relative;
-  right: 5rem;
 }
 #Skills #html {
   background: #303030;
-  background: linear-gradient(90deg, #7f7f7f 70%, #303030 70%);
+  background: linear-gradient(90deg, #bababa 70%, #303030 70%);
   animation: animate 1.2s linear;
-  text-align: start;
+
   line-height: 20px;
   margin-top: -10px;
 }
 #Skills #ht {
   animation: animateText 1.5s linear;
   color: #f16529;
-  position: relative;
-  right: 6.5rem;
 }
 
 #Skills #css3 {
   animation: animateText 1.7s linear;
   color: #0078d4;
-  position: relative;
-  right: 6.9rem;
 }
 
 #Skills #css {
   color: #fff;
   background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, #7f7f7f 60%, #303030 60%);
+  background: linear-gradient(90deg, #bababa 60%, #303030 60%);
   animation: animate 1.3s linear;
   text-align: start;
 }
@@ -264,13 +266,11 @@ ul li {
 #Skills #javaScript {
   animation: animateText 1.9s linear;
   color: #f7df1e;
-  position: relative;
-  right: 5rem;
 }
 #Skills #js {
   color: #fff;
   background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, #7f7f7f 45%, #303030 45%);
+  background: linear-gradient(90deg, #bababa 45%, #303030 45%);
   animation: animate 1.4s linear;
   text-align: start;
 }
@@ -278,14 +278,12 @@ ul li {
 #Skills #py {
   animation: animateText 2.1s linear;
   color: #f7df1e;
-  position: relative;
-  right: 6rem;
 }
 
 #Skills #python {
   color: #fff;
   background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, #7f7f7f 30%, #303030 30%);
+  background: linear-gradient(90deg, #bababa 30%, #303030 30%);
   animation: animate 1.5s linear;
   text-align: start;
 }
@@ -293,26 +291,24 @@ ul li {
 #Skills #win {
   animation: animateText 2.3s linear;
   color: #0078d4;
-  position: relative;
-  right: 5.5rem;
 }
 
 #Skills #windows {
   color: #fff;
   background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, #7f7f7f 100%, #303030 100%);
+  background: linear-gradient(90deg, #bababa 100%, #303030 100%);
   animation: animate 1.6s linear;
   text-align: start;
 }
 #Skills #macOS {
-  position: relative;
-  right: 6rem;
+  animation: animateText 2.4s linear;
+  color: #fff;
 }
 #Skills #mac {
   animation: animateText 2.5s linear;
   color: #fff;
   background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, #7f7f7f 95%, #303030 95%);
+  background: linear-gradient(90deg, #bababa 95%, #303030 95%);
   animation: animate 1.7s linear;
   text-align: start;
   margin-bottom: 10px;
@@ -330,18 +326,31 @@ ul li {
   text-decoration: underline;
 }
 
+.link {
+  color: white;
+  transition: 0.5s ease-in;
+}
+.link:hover {
+  color: #bababa;
+}
 /* conteudo principal */
+.project {
+  display: flex;
+  flex-direction: row;
+}
+
 .projects-gallery {
-  column-count: 3;
-  column-gap: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects-gallery img {
-  margin: 0 0 2px 8px;
-  width: 100%;
+  width: 200px;
   aspect-ratio: 1/1;
-  transition: scale 350ms ease, opacity 350ms linear;
+  transition: transform 0.5s ease, opacity 0.8s ease;
+  margin-right: 10px;
 }
+
 .projects-gallery:has(img:hover) img:not(:hover) {
   scale: 0.9;
   opacity: 0.7;
@@ -389,10 +398,10 @@ ul li {
     right: 9rem !important;
   }
 
-  #Skills #cSharp {
+  #Skills #reactNative {
     right: 10.5rem !important;
   }
-  #Skills #sql {
+  #Skills #reactJS {
     right: 8.4rem !important;
   }
   #Skills #ht {
@@ -422,13 +431,11 @@ ul li {
   }
 
   .projects-gallery:has(img:hover) img:not(:hover) {
-  scale: 1;
-  opacity: 1;
-}
+    scale: 1;
+    opacity: 1;
+  }
 
   .projects-gallery img {
-    /* margin: 0 0 2px 8px; */
-
     width: 100%;
     aspect-ratio: 1/1;
     transition: none;
