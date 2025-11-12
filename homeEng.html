@@ -28,14 +28,14 @@
         }
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
-    <title>Jonathan Silva - Portfolio</title>
+    <title>Jonathan Silva | Front-End Developer Portfolio</title>
   </head>
   <body>
     <div id="header-container">
       <header id="hd-container">
         <a href="https://github.com/JohnSilva98" target="_blank">
-          <h1>Jonathan Silva - Dev</h1></a
-        >
+          <h1>Jonathan Silva <span class="role">Front-End Developer</span></h1>
+
         <div id="social-media">
           <a
             href="https://www.facebook.com/johnjohnsons2/"
@@ -95,9 +95,8 @@
               <p id="macOS" class="title">MacOS</p>
               <li id="mac"></li>
             </ul>
-            <a href="index.html" id="portugues" class="switch"
-              >Versão em português</a
-            >
+<a href="index.html" id="portugues" class="switch">Switch to Portuguese</a>
+
           </div>
         </aside>
       </div>
@@ -105,51 +104,146 @@
         <h2>Welcome to my Portfolio</h2>
         <br />
         <p class="description">
-          Nice to meet you! I am
-          <span class="highlight">Developer</span>, i graduated in Systems
-          Analisys and Development in 2021 and i'm studying
-          <span class="highlight">HTML, CSS and Javascript </span>and i'll be
-          very happy to show you some projects. All projects are working, you
-          can click on the thumbnail to open it in a new tab!
+          Hi there! 👋 I’m <span class="highlight">Jonathan Silva</span>, a
+          passionate <span class="highlight">Front-End Developer</span> with a
+          degree in Systems Analysis and Development (2021). I’m currently
+          focused on improving my skills in
+          <span class="highlight">HTML, CSS, and JavaScript</span>, and I’m
+          excited to share some of my favorite projects with you. All of them
+          are <strong>fully functional</strong> — just click on a thumbnail to
+          open and explore it in a new tab!
         </p>
         <br />
-        <h3>Check it out some of my projects 😁</h3>
+        <h3>Check out some of my projects 😁</h3>
         <br />
         <section class="projects-gallery">
-          <a href="Projetos/Gerador QR_Code/index.html" target="_blank">
-            <img src="Portfólio/assets/QRCode.png" alt="Gerador de QR_Code" />
-          </a>
-          <a href="Projetos/Gerador de senhas/index.html" target="_blank">
-            <img
-              src="Portfólio/assets/geradorDeSenha.png"
-              alt="gerador de senha"
-            />
-          </a>
-          <a href="Projetos/Dev Notes/index.html" target="_blank">
-            <img src="Portfólio/assets/DevNotes.png" alt="Formulario" />
-          </a>
-          <a href="Projetos/Pagina_instagram/homeInsta.html" target="_blank">
-            <img src="Portfólio/assets/Clone_Insta.png" alt="Clone instagram" />
-          </a>
-          <a href="Projetos/calculadoraIMC/index.html" target="_blank">
-            <img src="Portfólio/assets/calcIMC.png" alt="calculadoraIMC" />
-          </a>
-          <a href="Projetos/Gerador box-shadow/index.html" target="_blank">
-            <img src="Portfólio/assets/geradorBoxShadow.png" alt="Host HDC" />
-          </a>
-          <a href="Projetos/Guess the number/index.html" target="_blank">
-            <img src="Portfólio/assets/GuessTheNumber.png" alt="Guess" />
-          </a>
-          <a href="Projetos/RandomUser_Generator/index.html" target="_blank">
-            <img src="Portfólio/assets/randoUserGenerator.png" alt="" />
-          </a>
-          <a href="Projetos/Tip-Calculator/index.html" target="_blank">
-            ''
-            <img
-              src="Portfólio/assets/TipCalculator.png"
-              alt="Tip Calculator"
-            />
-          </a>
+          <div class="project">
+            <a href="Projetos/Gerador QR_Code/index.html" target="_blank">
+              <img src="Portfólio/assets/QRCode.png" alt="QR Code Generator" />
+            </a>
+            <p class="projectDescription">
+              A simple project that receives any link and, through an API,
+              generates a QR code to access the desired URL. It can be used to
+              create payment codes, satisfaction surveys, profile links, Wi-Fi
+              access, and more. The API used was
+              <strong>QR Code Generator</strong>:
+              <a href="https://goqr.me/api/" target="_blank" class="link">
+                Access the official API website here </a
+              >.
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="Projetos/Gerador de senhas/index.html" target="_blank">
+              <img
+                src="Portfólio/assets/geradorDeSenha.png"
+                width="100px"
+                alt="Password Generator"
+              />
+            </a>
+            <p class="projectDescription">
+              Creates secure and customizable passwords with letters, numbers,
+              and symbols to help protect your online accounts. The user can
+              define the password length and strength by selecting which
+              character types to include.
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="Projetos/Dev Notes/index.html" target="_blank">
+              <img src="Portfólio/assets/DevNotes.png" alt="Dev Notes App" />
+            </a>
+            <p class="projectDescription">
+              A simple note-taking app for developers that allows creating,
+              viewing, and deleting notes directly in the browser. It also lets
+              you pin and unpin notes — everything is stored and managed via
+              <strong>LocalStorage</strong>.
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="Projetos/Pagina_instagram/homeInsta.html" target="_blank">
+              <img
+                src="Portfólio/assets/Clone_Insta.png"
+                alt="Instagram Clone"
+              />
+            </a>
+            <p class="projectDescription">
+              A replica of Instagram’s main interface, built with HTML and CSS
+              to practice responsive layouts and modern styling. Includes links
+              such as “Login with Facebook”, “Forgot password?”, and “Download
+              the app”.
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="Projetos/calculadoraIMC/index.html" target="_blank">
+              <img src="Portfólio/assets/calcIMC.png" alt="BMI Calculator" />
+            </a>
+            <p class="projectDescription">
+              A Body Mass Index (BMI) calculator that dynamically displays the
+              result and classification based on user input. The BMI formula
+              used is: <strong>weight / (height × height)</strong>.
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="Projetos/Gerador box-shadow/index.html" target="_blank">
+              <img
+                src="Portfólio/assets/geradorBoxShadow.png"
+                alt="Box Shadow Generator"
+              />
+            </a>
+            <p class="projectDescription">
+              An interactive tool to create custom CSS box shadows in real time,
+              allowing users to copy the ready-to-use code. Very useful for
+              speeding up UI styling and design consistency.
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="Projetos/Guess the number/index.html" target="_blank">
+              <img
+                src="Portfólio/assets/GuessTheNumber.png"
+                alt="Guess the Number Game"
+              />
+            </a>
+            <p class="projectDescription">
+              An interactive game where the user tries to guess a secret number
+              randomly generated by the system, with visual feedback on success.
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="Projetos/RandomUser_Generator/index.html" target="_blank">
+              <img
+                src="Portfólio/assets/randoUserGenerator.png"
+                alt="Random User Generator"
+              />
+            </a>
+            <p class="projectDescription">
+              Generates random user profiles (name, photo, email, etc.) using a
+              public API — perfect for testing layouts, simulating real data,
+              and practicing API integration.
+              <a href="https://randomuser.me/" target="_blank" class="link">
+                Access the API documentation here </a
+              >.
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="Projetos/Tip-Calculator/index.html" target="_blank">
+              <img
+                src="Portfólio/assets/TipCalculator.png"
+                alt="Tip Calculator"
+              />
+            </a>
+            <p class="projectDescription">
+              Automatically calculates the tip amount and total bill based on
+              the selected percentage and number of people. Helps users easily
+              split the bill and determine how much each person should pay.
+            </p>
+          </div>
         </section>
       </div>
     </main>

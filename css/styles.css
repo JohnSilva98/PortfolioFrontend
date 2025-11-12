@@ -7,8 +7,8 @@
 }
 /* html */
 html {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(180deg, #000000 30%, rgb(4, 201, 69) 100%);
+  background: linear-gradient(180deg, #0a0a0a 30%, #1e1e1e 100%);
+  color: #f5f5f5;
 }
 
 #main-container {
@@ -26,7 +26,7 @@ h1 {
 
 h1:hover {
   box-shadow: inset 400px 0 0 0 #191919;
-  color: #9c9b9b;
+  color: #4affd4;
 }
 h2,
 h3,
@@ -56,7 +56,7 @@ h3 {
 }
 
 .highlight {
-  color: yellowgreen;
+  color: #6aff8f;
 }
 #social-media {
   position: absolute;
@@ -76,8 +76,8 @@ h3 {
   -webkit-transform: scale(1.4);
   -ms-transform: scale(1.4);
   transform: scale(1.4);
-  color: black;
-  background-color: white;
+  color: #4affd4;
+
   border-radius: 50%;
 }
 #social-media i {
@@ -111,6 +111,9 @@ h3 {
 }
 .project img {
   border-radius: 20px;
+}
+.role {
+  color: #4affd4;
 }
 /* aside */
 #aside-content {
@@ -155,9 +158,7 @@ h3 {
   transition: 0.5s ease;
 }
 #aside-content #English:hover {
-  background-color: white;
-  color: black;
-  border-radius: 20px;
+  color: #4affd4;
 }
 #aside-content #portugues {
   background-color: transparent;
@@ -167,9 +168,7 @@ h3 {
   transition: 0.5s ease;
 }
 #aside-content #portugues:hover {
-  background-color: white;
-  color: black;
-  border-radius: 20px;
+  color: #4affd4;
 }
 
 a {
