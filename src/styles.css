@@ -1,0 +1,505 @@
+/* reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+/* html */
+html {
+  background: linear-gradient(180deg, #0a0a0a 30%, #1e1e1e 100%);
+  color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+h1 {
+  box-shadow: inset 0 0 0 0 #000000;
+  color: white;
+  opacity: 1;
+  transition: color 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+h1:hover {
+  box-shadow: inset 400px 0 0 0 #191919;
+  color: #4affd4;
+}
+h2,
+h3,
+p {
+  color: #fff;
+}
+h2,
+h3 {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.description {
+  margin-left: 10px;
+  line-height: 22px;
+}
+/* cabeçalho */
+#header-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1e1e1e;
+  align-items: center;
+}
+#header-container h1 {
+  position: relative;
+  left: 8px;
+}
+
+.highlight {
+  color: #6aff8f;
+}
+#social-media {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
+#social-media a {
+  color: white;
+  text-decoration: none;
+}
+#social-media i {
+  color: white;
+  transition: 0.5s;
+}
+#social-media i:hover {
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+  color: #4affd4;
+
+  border-radius: 50%;
+}
+#social-media i {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+#content-container {
+  flex-direction: column;
+}
+#habilidades {
+  background-color: #000000;
+  width: 100%;
+  /* height: 100vh; */
+}
+#habilidades li {
+  margin: 10px;
+}
+
+.switch {
+  padding: 5px;
+  margin: 30px 0;
+}
+
+#contato {
+  padding: 10px;
+}
+.projectDescription {
+  font-size: 20px;
+  font-weight: 500;
+}
+.project img {
+  border-radius: 20px;
+}
+.role {
+  color: #4affd4;
+}
+/* aside */
+#aside-content {
+  flex: 1 1 30%;
+  text-align: center;
+  background-color: #1e1e1e;
+
+  height: auto;
+  width: 400px;
+}
+
+#aside-content img {
+  margin-top: 10px;
+  border-radius: 100px;
+  height: 170px;
+  width: 170px;
+}
+
+#aside-content p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#aside-content a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+#aside-content i {
+  margin-right: 10px;
+}
+
+#aside-content #English {
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  transition: 0.5s ease;
+}
+#aside-content #English:hover {
+  color: #4affd4;
+}
+#aside-content #portugues {
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  transition: 0.5s ease;
+}
+#aside-content #portugues:hover {
+  color: #4affd4;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* lista skills */
+
+ul li {
+  margin-bottom: 5px;
+}
+/* Animate */
+/* Animação Titulo */
+@keyframes animateText {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/* Animação Barra */
+@keyframes animate {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+
+  100% {
+    opacity: 1;
+    width: 90%;
+  }
+}
+#Skills p {
+  text-align: start;
+  margin-left: 10px;
+}
+#Skills #rn {
+  background: #303030;
+  background: linear-gradient(90deg, #bababa 75%, #303030 45%);
+  animation: animate 1s linear;
+
+  line-height: 20px;
+  margin-top: -10px;
+}
+#Skills #reactNative {
+  animation: animateText 1.1s linear;
+  color: #15c7e2;
+}
+
+#Skills #rjs {
+  background: #303030;
+  background: linear-gradient(90deg, #bababa 65%, #303030 40%);
+  animation: animate 1.1s linear;
+
+  line-height: 20px;
+  margin-top: -10px;
+}
+#Skills #reactjs {
+  animation: animateText 1.3s linear;
+  color: #e52e2e;
+}
+#Skills #html {
+  background: #303030;
+  background: linear-gradient(90deg, #bababa 70%, #303030 70%);
+  animation: animate 1.2s linear;
+
+  line-height: 20px;
+  margin-top: -10px;
+}
+#Skills #ht {
+  animation: animateText 1.5s linear;
+  color: #f16529;
+}
+
+#Skills #css3 {
+  animation: animateText 1.7s linear;
+  color: #0078d4;
+}
+
+#Skills #css {
+  color: #fff;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, #bababa 60%, #303030 60%);
+  animation: animate 1.3s linear;
+  text-align: start;
+}
+
+#Skills #javaScript {
+  animation: animateText 1.9s linear;
+  color: #f7df1e;
+}
+#Skills #js {
+  color: #fff;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, #bababa 45%, #303030 45%);
+  animation: animate 1.4s linear;
+  text-align: start;
+}
+
+#Skills #py {
+  animation: animateText 2.1s linear;
+  color: #f7df1e;
+}
+
+#Skills #NextJS {
+  color: #fff;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, #bababa 30%, #303030 30%);
+  animation: animate 1.5s linear;
+  text-align: start;
+}
+
+#Skills #win {
+  animation: animateText 2.3s linear;
+  color: #0078d4;
+}
+
+#Skills #windows {
+  color: #fff;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, #bababa 100%, #303030 100%);
+  animation: animate 1.6s linear;
+  text-align: start;
+}
+#Skills #macOS {
+  animation: animateText 2.4s linear;
+  color: #fff;
+}
+#Skills #mac {
+  animation: animateText 2.5s linear;
+  color: #fff;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, #bababa 95%, #303030 95%);
+  animation: animate 1.7s linear;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+/* cabeçalho */
+
+#email {
+  color: white;
+  transition: 0.5s;
+}
+
+#email:hover {
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+
+.link {
+  color: white;
+  transition: 0.5s ease-in;
+}
+.link:hover {
+  color: #bababa;
+}
+/* conteudo principal */
+.project {
+  display: flex;
+  flex-direction: row;
+}
+
+.projects-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-gallery img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  transition: transform 0.5s ease, opacity 0.8s ease;
+  margin-right: 10px;
+}
+
+.projects-gallery:has(img:hover) img:not(:hover) {
+  scale: 0.9;
+  opacity: 0.7;
+}
+
+/* Tablets: 768px - 1024px */
+@media screen and (max-width: 1024px) {
+  #aside-content {
+    width: 320px;
+    flex: 0 0 auto;
+  }
+  
+  #content-container {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .projects-gallery img {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #main-container {
+    flex-direction: column;
+  }
+  
+  #aside-content {
+    width: 100%;
+    order: -1;
+  }
+  
+  #header-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  #social-media {
+    position: static;
+  }
+  
+  .projects-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .project img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Mobile médio: 480px - 600px */
+@media screen and (max-width: 600px) {
+  #aside-content img {
+    height: 140px;
+    width: 140px;
+  }
+  
+  #aside-content p {
+    font-size: 1rem;
+  }
+  
+  .projectDescription {
+    font-size: 16px;
+  }
+  
+  h2, h3 {
+    font-size: 1.4rem;
+    margin-left: 5px;
+  }
+  
+  .description {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+}
+
+/* Mobile pequeno: até 430px */
+@media screen and (max-width: 430px) {
+  #main-container {
+    display: block;
+  }
+
+  #header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  #header-container h1 {
+    color: #fff;
+  }
+  #social-media {
+    position: relative;
+    left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #social-media a {
+    color: #fff;
+  }
+
+  #aside-content {
+    width: 100%;
+    /* height: 100vh; */
+  }
+  #habilidades #hab {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+
+  #Skills {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  #Skills .title {
+    position: static !important;
+    margin-bottom: 2px;
+  }
+
+  .projects-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .projects-gallery:has(img:hover) img:not(:hover) {
+    scale: 1;
+    opacity: 1;
+  }
+
+  .projects-gallery img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    transition: none;
+  }
+}

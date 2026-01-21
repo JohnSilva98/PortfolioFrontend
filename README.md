@@ -1,8 +1,39 @@
-# Portfolio
-Projeto de estudo do curso de HTML CSS e JS do Hora de Codar, onde o objetivo é criar um portfólio de front end
+# Portfolio Frontend (React + Vite)
 
-<img width="947" alt="image" src="https://github.com/JohnSilva98/Portfolio/assets/53828298/8489b0dd-e645-41f7-9409-e0d0f6eca93a">
-<p>A página conta com projetos funcionais como clone da página de login e cadastro do Instagram, gerador de shadowbox, calculadora de IMC entre outros</p>
-<p>Além disso, possui links para minhas redes sociais como LinkedIn, Facebook, Instagram e Github</p>
+Portfólio pessoal com páginas PT/EN, sidebar de habilidades e galeria de projetos.
+Os projetos listados são mini-sites estáticos hospedados em `public/Projetos`.
 
+## Estrutura do projeto
 
+- `src/main.jsx`: bootstrap da aplicação React + Router.
+- `src/App.jsx`: rotas `/` (PT) e `/en` (EN).
+- `src/pages/HomePt.jsx`: página principal em português.
+- `src/pages/HomeEn.jsx`: página principal em inglês.
+- `src/styles.css`: estilos globais migrados do projeto HTML original.
+- `public/Portfólio`, `public/Projetos`, `public/img`: assets e projetos estáticos.
+
+## Como rodar
+
+```bash
+npm install
+npm run dev
+```
+
+## Build e preview
+
+```bash
+npm run build
+npm run preview
+```
+
+## Como editar conteúdo
+
+- Texto e links da versão PT: `src/pages/HomePt.jsx`.
+- Texto e links da versão EN: `src/pages/HomeEn.jsx`.
+- Projetos na galeria: são links para HTML estático em `public/Projetos`.
+- Estilos globais: `src/styles.css`.
+
+## Observações de segurança
+
+- `npm audit` não encontrou vulnerabilidades na árvore atual.
+- Links externos usam `rel="noreferrer"` para evitar tabnabbing.

@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- estilos css -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -29,207 +26,9 @@
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
     <title>Jonathan Silva | Front-End Developer Portfolio</title>
-
   </head>
   <body>
-    <div id="header-container">
-      <header id="hd-container">
-        <a href="https://github.com/JohnSilva98" target="_blank">
-          <h1>Jonathan Silva <span class="role">Desenvolvedor Front-End</span></h1>
-
-        <div id="social-media">
-          <a
-            href="https://www.facebook.com/johnjohnsons2/"
-            class="logo"
-            target="_blank"
-          >
-            <i class="fa-brands fa-facebook" id="fb"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/silvajohnyes/"
-            class="logo"
-            target="_blank"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/jonathansilva98"
-            class="logo"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/johnsilva98" class="logo" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-      </header>
-    </div>
-    <main id="main-container">
-      <div id="aside-content">
-        <aside>
-          <div id="contato">
-            <img src="img/prof_photo.jpg" alt="profile" />
-            <p>Contato</p>
-            <a href="mailto:jonathan.design16@outlook.com" id="email"
-              ><i class="fa-solid fa-envelope"></i
-              >jonathan.design16@outlook.com</a
-            >
-          </div>
-          <div id="habilidades">
-            <p id="hab">Habilidades</p>
-            <ul id="Skills">
-              <p id="reactNative" class="title">React native</p>
-              <li id="rn"></li>
-              <p id="reactjs" class="title">React JS</p>
-              <li id="rjs"></li>
-              <p id="ht" class="title">HTML</p>
-              <li id="html"></li>
-              <p id="css3" class="title">CSS</p>
-              <li id="css"></li>
-              <p id="javaScript" class="title">Javascript</p>
-              <li id="js"></li>
-              <p id="py" class="title">NextJS</p>
-              <li id="NextJS"></li>
-              <p id="win" class="title">Windows</p>
-              <li id="windows"></li>
-              <p id="macOS" class="title">MacOS</p>
-              <li id="mac"></li>
-            </ul>
-            <a href="homeEng.html" id="English" class="switch"
-              >English Version</a
-            >
-          </div>
-        </aside>
-      </div>
-      <div id="content-container">
-        <h2>Bem-Vindo ao meu Portfólio</h2>
-        <br />
-        <p class="description">
-          Muito prazer! Me chamo Jonathan Silva, sou um
-          <span class="highlight">Desenvolvedor Front-End</span>, me formei em Análise e
-          Desenvolvimento de Sistemas em 2021 pela FMU e no momento estou
-          estudando
-          <span class="highlight">HTML, CSS, Javascript e React, </span>e
-          ficarei muito feliz de mostrar alguns dos meus projetos! Todos são
-          funcionais, basta clicar na miniatura para abrir em uma nova guia.
-        </p>
-        <br />
-        <h3>Confira abaixo alguns dos meus projetos 😁</h3>
-        <br />
-        <section class="projects-gallery">
-          <div class="project">
-            <a href="Projetos/Gerador QR_Code/index.html" target="_blank">
-              <img src="Portfólio/assets/QRCode.png" alt="Gerador de QR_Code" />
-            </a>
-            <p class="projectDescription">
-              Um projeto simples o qual recebe um link qualquer e através de uma
-              API gera um qrcode para acessar o link desejado, pode ser usado
-              para gerar códigos de pagamento, pesquisa de satisfação, acessar
-              perfil, conectar a redes Wi-Fi etc.. a api utilizada foi a QR Code
-              Generator:
-              <a href="https://goqr.me/api/" target="_blank" class="link"
-                >Acesse o site oficial da API aqui</a
-              >
-            </p>
-          </div>
-          <div class="project">
-            <a href="Projetos/Gerador de senhas/index.html" target="_blank">
-              <img
-                src="Portfólio/assets/geradorDeSenha.png"
-                width="100px"
-                alt="gerador de senha"
-              />
-            </a>
-            <p class="projectDescription">
-              Cria senhas seguras e personalizadas com letras, números e
-              símbolos, ajudando a proteger suas contas online. Permite o
-              usuario definir o tamanho da senha e a sua força, selecionando se
-              a senha terá letras, números e símbolos
-            </p>
-          </div>
-          <div class="project">
-            <a href="Projetos/Dev Notes/index.html" target="_blank">
-              <img src="Portfólio/assets/DevNotes.png" alt="Formulario" />
-            </a>
-            <p class="projectDescription">
-              Um aplicativo simples de anotações para desenvolvedores, que
-              permite criar, visualizar e excluir notas diretamente no
-              navegador. Também permite fixar e desafixar notas, tudo é
-              armazenado e controlado via LocalStorage
-            </p>
-          </div>
-          <div class="project">
-            <a href="Projetos/Pagina_instagram/homeInsta.html" target="_blank">
-              <img
-                src="Portfólio/assets/Clone_Insta.png"
-                alt="Clone instagram"
-              />
-            </a>
-            <p class="projectDescription">
-              Uma réplica da interface principal do Instagram, desenvolvida com
-              HTML e CSS para praticar layout responsivo e estilização moderna.
-              Conta com links para páginas como, logar com facebook, esqueceu
-              sua senha, acesse a loja para baixar o app entre outras.
-            </p>
-          </div>
-          <div class="project">
-            <a href="Projetos/calculadoraIMC/index.html" target="_blank">
-              <img src="Portfólio/assets/calcIMC.png" alt="calculadoraIMC" />
-            </a>
-            <p class="projectDescription">
-              Calculadora de Índice de Massa Corporal (IMC) que exibe o
-              resultado e a classificação de forma dinâmica com base nos valores
-              inseridos. o Calculo de IMC é: peso / (altura x altura).
-            </p>
-          </div>
-          <div class="project">
-            <a href="Projetos/Gerador box-shadow/index.html" target="_blank">
-              <img src="Portfólio/assets/geradorBoxShadow.png" alt="Host HDC" />
-            </a>
-            <p class="projectDescription">
-              Ferramenta interativa para criar sombras CSS personalizadas em
-              tempo real, permitindo copiar o código pronto para seus projetos.
-              ou erro. Muito util para agilizar na criação de sombras
-            </p>
-          </div>
-          <div class="project">
-            <a href="Projetos/Guess the number/index.html" target="_blank">
-              <img src="Portfólio/assets/GuessTheNumber.png" alt="" />
-            </a>
-            <p class="projectDescription">
-              Jogo interativo onde o usuário tenta adivinhar o número secreto
-              gerado aleatoriamente pelo sistema, com feedback visual de acerto
-            </p>
-          </div>
-          <div class="project">
-            <a href="Projetos/RandomUser_Generator/index.html" target="_blank">
-              <img src="Portfólio/assets/randoUserGenerator.png" alt="" />
-            </a>
-            <p class="projectDescription">
-              Gera perfis aleatórios de usuários (nome, foto, e-mail etc.)
-              usando uma API pública, ótimo para testar layouts,simular dados
-              reais e praticar o consumo de dados de API.
-              <a href="https://randomuser.me/" target="_blank" class="link"
-                >Acesse a documentação da API aqui</a
-              >
-            </p>
-          </div>
-          <div class="project">
-            <a href="Projetos/Tip-Calculator/index.html" target="_blank">
-              <img
-                src="Portfólio/assets/TipCalculator.png"
-                alt="Tip Calculator"
-              />
-            </a>
-            <p class="projectDescription">
-              Calcula automaticamente o valor da gorjeta e o total da conta com
-              base no percentual escolhido e número de pessoas.
-            </p>
-          </div>
-        </section>
-      </div>
-    </main>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
